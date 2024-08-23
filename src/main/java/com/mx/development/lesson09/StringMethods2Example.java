@@ -9,24 +9,25 @@ public class StringMethods2Example {
         System.out.println("¿Ambas cadenas son iguales? " + resultado);
         //-1  0   1
 
-        System.out.println(texto1.startsWith("El gato"));
+        System.out.println(texto1.startsWith("El gato de mi vecina, se cayó y se fracturó la cola"));
         System.out.println(texto2.startsWith("Superman algo"));
         System.out.println(texto1.endsWith("la cola"));
 
         int indice = texto1.indexOf("cayó");
-        System.out.println("indice: "+ indice);
+        System.out.println("indice 25: "+ indice);
 
         int indiceNoExistente = texto2.indexOf("batman");
-        System.out.println(indiceNoExistente);
+        System.out.println("indiceNoExistente -1: " + indiceNoExistente);
 
         System.out.println(texto1.substring(4));
         System.out.println(texto1.substring(4, 29));
 
         System.out.println(texto1.replace('a', 'X'));
 
-        String texto3 = "        algun texto en particular        333 ";
+        String texto3 = "      algun texto en particular 333     ";
         System.out.println(texto3.length());
         texto3 = texto3.trim();
+        System.out.println(texto3.length());
 
 
         //SOLID principles
@@ -35,7 +36,6 @@ public class StringMethods2Example {
         texto3 = texto3.toUpperCase();
         System.out.println(texto3);
 
-        //System.out.println(texto3.length());
     }
 
 }

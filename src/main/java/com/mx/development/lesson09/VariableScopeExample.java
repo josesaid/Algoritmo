@@ -17,7 +17,7 @@ public class VariableScopeExample {
         System.gc();
     }
 
-      public int add(int data){
+    public int add(int data) {
         int suma = this.suma + data;
         return suma;
     }
