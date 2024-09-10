@@ -1,10 +1,10 @@
-package com.mx.development.lessons08;
+package com.mx.development.lesson08;
 
 public class Planeta {
 
     //Encapsulamiento, Herencia, polimorfismo, sobrecarga, sobreescritura
     public static void main(String[] args) throws Exception {
-        Persona karol = new Persona();
+        com.mx.development.lessons08.Persona karol = new com.mx.development.lessons08.Persona();
 
         //Este tipo de asignaciones usa correctamente el encapsulamiento
         karol.setNombre("Karol");
@@ -12,7 +12,7 @@ public class Planeta {
         //karol.email = "karol.lozada@codegym.com.uk";
         karol.setEmail("karol.lozada@codegym.com.uk");
 
-        Persona said = new Persona();
+        com.mx.development.lessons08.Persona said = new com.mx.development.lessons08.Persona();
         said.setNombre("Said");
         said.setEdad(-10);
 
