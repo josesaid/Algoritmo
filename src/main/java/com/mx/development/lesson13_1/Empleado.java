@@ -1,8 +1,12 @@
 package com.mx.development.lesson13_1;
 
-public class Empleado extends Persona implements Pensable{
+import lombok.Data;
+
+@Data
+public class Empleado extends Persona {
     private String idEmpleado;
     private String email;
+    private float salario;
 
     public Empleado(String idEmpleado, String email) {
         this.idEmpleado = idEmpleado;
@@ -10,22 +14,11 @@ public class Empleado extends Persona implements Pensable{
     }
     public Empleado(){}
 
-    public String getIdEmpleado() {
-        return idEmpleado;
+    public Empleado(String idEmpleado, String email, float salario) {
+        this.idEmpleado = idEmpleado;   //setIdEmpleado(idEmpleado);
+        setEmail(email);
+        setSalario(salario);
     }
-
-    public void setIdEmpleado(String idEmpleado) {
-        this.idEmpleado = idEmpleado;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     @Override
     public void pensar() {
         System.out.println("Pensando como un empleado L-V, y sábado descanso...");

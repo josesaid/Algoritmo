@@ -1,22 +1,23 @@
 package com.mx.development.lesson13_1;
 
+import lombok.Data;
+@Data
 public class LiderProyecto extends Empleado implements Pensable{
 
-    private Empleado []integrantes = new Empleado[6];
+    private Empleado [] integrantes = new Empleado[6];
 
     public LiderProyecto(){
     }
 
+    public LiderProyecto(String nombre, String email, float salario, Empleado[]integrantes){
+        setNombre(nombre);
+        setEmail(email);
+        setSalario(salario);
+        setIntegrantes(integrantes);
+    }
+
     public LiderProyecto(Empleado[] integrantesEquipo){
         this.integrantes = integrantesEquipo;
-    }
-
-    public Empleado[] getIntegrantes() {
-        return integrantes;
-    }
-
-    public void setIntegrantes(Empleado[] integrantes) {
-        this.integrantes = integrantes;
     }
 
     @Override
