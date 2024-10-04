@@ -1,4 +1,4 @@
-package com.mx.development.lessons08;
+package com.mx.development.lesson08;
 
 public class Calculadora {
     public static void main(String[] args) {
