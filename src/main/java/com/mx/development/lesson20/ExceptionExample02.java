@@ -11,10 +11,6 @@ public class ExceptionExample02 {
             System.out.println("Bloque finally ejecutado");
             metodoNormal();
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> f4fd2594a3207cc6ccacacca8337536af5fba010
     }
 
     private static void metodoNormal() {
