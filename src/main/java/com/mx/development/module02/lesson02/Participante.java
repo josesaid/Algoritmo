@@ -1,4 +1,4 @@
-package com.codegym.lessons.module02.lesson02;
+package com.mx.development.module02.lesson02;
 
 public abstract class Participante extends Persona{
     //@Override

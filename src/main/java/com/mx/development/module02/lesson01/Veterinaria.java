@@ -1,4 +1,4 @@
-package com.codegym.lessons.module02.lesson01;
+package com.mx.development.module02.lesson01;
 
 public class Veterinaria {
     public static void main(String[] args) {
