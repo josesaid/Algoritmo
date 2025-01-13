@@ -1,4 +1,4 @@
-package com.codegym.lessons.module02.lesson06;
+package com.mx.development.module02.lesson06;
 
 
 import java.util.*;

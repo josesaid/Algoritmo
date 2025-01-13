@@ -1,4 +1,4 @@
-package com.codegym.lessons.module02.lesson07;
+package com.mx.development.module02.lesson07;
 
 public class InstanceOfExample {
     public static void main(String[] args) {
