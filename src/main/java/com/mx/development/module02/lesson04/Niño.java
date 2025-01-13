@@ -1,4 +1,4 @@
-package com.codegym.lessons.module02.lesson04;
+package com.mx.development.module02.lesson04;
 
 public class Niño implements Llorable, Brincable, Comible{
     @Override
