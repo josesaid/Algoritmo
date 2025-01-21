@@ -3,8 +3,8 @@ package com.mx.development.module02.lesson06;
 import java.util.Optional;
 
 public class Address {
-    private String addressLine;
-    private String city;
+    private volatile String addressLine;
+    private volatile String city;
     private Country country;
 
     public Address(String addressLine, String city) {
