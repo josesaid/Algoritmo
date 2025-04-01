@@ -1,0 +1,5 @@
+com/example/TransactionalEmployeeManagerTest.class
+com/example/EmployeeManagerTest.class
+com/example/EmployeeInMemoryRepositoryTest.class
+com/example/EmployeeManagerBDDTest.class
+com/example/EmployeeManagerAlternativeTest.class
