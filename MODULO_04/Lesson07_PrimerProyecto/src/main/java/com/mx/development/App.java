@@ -17,11 +17,12 @@ public class App {
      */
     public static void main( String[] args ) {
 
+        /*
         System.out.println(new DatabaseInsert().insert(DatabaseConstants.queryInsert01) > 0 ?
                 "Exito en insert 01":"Error en insert 01");
         System.out.println(new DatabaseInsert().insert(DatabaseConstants.queryInsert02) > 0 ?
                 "Exito en insert 02":"Error en insert 02");
-
+        */
         DatabaseQuery dbQuery = new DatabaseQuery();
         Object object = dbQuery.query(DatabaseConstants.queryInsert03);
 
@@ -33,6 +34,7 @@ public class App {
         }
         if(object instanceof ResultSet){
             ResultSet rs = (ResultSet)object;
+
             try{
                 System.out.println("NOMBRE:");
                 while(rs.next()){

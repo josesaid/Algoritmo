@@ -21,7 +21,13 @@ public class DatabaseQuery {
         }
         try{
             if(connection != null){
-                statement = connection.createStatement();
+                //statement = connection.createStatement();
+
+                //Modificado para permitir el re-ajuste (mover el puntero al inicio del Resultset).
+                 statement = connection.createStatement(
+                        ResultSet.TYPE_SCROLL_INSENSITIVE,
+                        ResultSet.CONCUR_READ_ONLY
+                );
             }else{
                 System.err.println("Error debido a que la conexión es nula.");
                 return ERROR_MYSQL_CONEXION_ES_NULA;
@@ -32,13 +38,15 @@ public class DatabaseQuery {
         }
         try{
             resultSet  = statement.executeQuery(query);
-            /*ResultSet rs = resultSet;
+            ResultSet rs = resultSet;
             int rowCount = 0;
 
             while (rs.next()) {
                 rowCount++;
             }
-            System.out.println("Registro(s) obtenidos(s) exitosamente: " + rowCount);*/
+            System.out.println("Registro(s) obtenidos(s) exitosamente: " + rowCount);
+            //Aquí regreso manualmente el puntero del RS hacia el princio.
+            rs.first();
         } catch (SQLException e) {
             System.err.println("Error al insertar el empleado: " + e.getMessage());
             return ERROR_MYSQL_INSERCION;
