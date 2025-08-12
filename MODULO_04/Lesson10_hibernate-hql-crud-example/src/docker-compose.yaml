@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  hibernate_demo-service:
+    image: mysql:8.0
+    container_name: hibernate_demo-service
+    environment:
+      MYSQL_ROOT_PASSWORD: "123"
+      MYSQL_DATABASE: "hibernate_database"
+    ports:
+      - "3308:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

@@ -1,0 +1,8 @@
+ docker run -d \
+  --name hibernate_demo-service \
+  -e MYSQL_ROOT_PASSWORD=123 \
+  -e MYSQL_DATABASE=hibernate_database \
+  -p 3308:3306 \
+  mysql:8.0 \
+  --default-authentication-plugin=mysql_native_password
+
