@@ -1,0 +1,5 @@
+org/example/CreateRecordsExample.class
+org/example/QueryClassesExample.class
+org/example/Main.class
+org/example/HibernateUtil.class
+org/example/entity/User.class
