@@ -8,7 +8,7 @@ import net.javaguides.hibernate.entity.Student;
 public class App {
 	public static void main(String[] args) {
 		StudentDao studentDao = new StudentDao();
-		Student student = new Student("Ramesh", "Fadatare", "rameshfadatare@javaguides.com");
+		Student student = new Student("Said", "Olano", "said_olano@javaguides.com");
 		studentDao.saveStudent(student);
 		
 		studentDao.insertStudent();
@@ -22,10 +22,10 @@ public class App {
 		students.forEach(s -> System.out.println(s.getFirstName()));
 		
 		// get single student
-		Student student2 = studentDao.getStudent(1);
+		Student student2 = studentDao.getStudent(2);
 		System.out.println(student2.getFirstName());
 		
 		// delete student
-		studentDao.deleteStudent(1);
+		studentDao.deleteStudent(2);
 	}
 }

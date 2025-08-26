@@ -120,6 +120,7 @@ public class StudentDao {
 			String hql = " FROM Student S WHERE S.id = :studentId";
 			Query query = session.createQuery(hql);
 			query.setParameter("studentId", id);
+
 			List results = query.getResultList();
 			
 			if (results != null && !results.isEmpty()) {
@@ -139,6 +140,9 @@ public class StudentDao {
 	public List<Student> getStudents() {
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 			return session.createQuery("from Student", Student.class).list();
+			//Query query = session.createQuery("from Student", Student.class);
+			//return query.getResultList();
 		}
 	}
+
 }
