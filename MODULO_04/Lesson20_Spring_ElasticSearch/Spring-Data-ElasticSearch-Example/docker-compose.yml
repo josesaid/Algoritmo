@@ -1,0 +1,12 @@
+services:
+  elasticsearch:
+    image: elasticsearch:8.11.3
+    container_name: elasticsearch
+    ports:
+      # Map the 9200 port to a random port on host
+      - "9200"
+    environment:
+      - discovery.type=single-node
+      - cluster.name=elasticsearch
+      # Since ES 8, SSL is on by default, disabling on local
+      - xpack.security.enabled=false
