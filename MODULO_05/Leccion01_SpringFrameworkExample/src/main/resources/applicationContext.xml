@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="direccion" class="com.mx.development.sample03.domain.Address">
+        <property name="houseNo" value="110/4"></property>
+        <property name="pincode" value="121212"></property>
+        <property name="state" value="Jalisco"></property>
+        <property name="country" value="Mexico"></property>
+    </bean>
+
+    <bean id="employee" class="com.mx.development.sample03.domain.Employee">
+        <property name="name" value="Said"></property>
+        <property name="employeeID" value="1001"></property>
+        <property name="department" value="Software development"></property>
+        <property name="address" ref="direccion"></property>
+    </bean>
+
+</beans>
