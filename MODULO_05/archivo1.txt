@@ -1,0 +1,10 @@
+Hola mundo
+desde el archivo1.txt
+a
+b
+c
+d
+e
+f
+g
+esta es la ultima linea...
